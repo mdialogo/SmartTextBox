@@ -52,7 +52,7 @@ namespace DataLift
             if (wordSpill && currentControl.Text.Length >= this.MaxLength)
             {
                 string lastWord = currentControl.Text.Substring(currentControl.Text.LastIndexOf(" ") + 1);
-                currentControl.Text = currentControl.Text.Substring(0, currentControl.Text.LastIndexOf(" "));
+                currentControl.Text = currentControl.Text.Substring(0, currentControl.Text.LastIndexOf(" ") + 1);
                 Control nextControl = currentControl.Parent.GetNextControl(currentControl, true);
                 nextControl.Text = lastWord + e.KeyChar;
                 nextControl.Focus();

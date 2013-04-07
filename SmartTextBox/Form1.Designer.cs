@@ -28,10 +28,18 @@ namespace SmartTextBox
         /// </summary>
         private void InitializeComponent()
         {
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.userControlTextBox3 = new DataLift.userControlTextBox();
             this.userControlTextBox2 = new DataLift.userControlTextBox();
             this.userControlTextBox1 = new DataLift.userControlTextBox();
             this.SuspendLayout();
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(13, 72);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 3;
             // 
             // userControlTextBox3
             // 
@@ -95,12 +103,15 @@ namespace SmartTextBox
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.userControlTextBox3);
             this.Controls.Add(this.userControlTextBox2);
             this.Controls.Add(this.userControlTextBox1);
+            this.KeyPreview = true;
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -109,6 +120,7 @@ namespace SmartTextBox
         private DataLift.userControlTextBox userControlTextBox1;
         private DataLift.userControlTextBox userControlTextBox2;
         private DataLift.userControlTextBox userControlTextBox3;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
